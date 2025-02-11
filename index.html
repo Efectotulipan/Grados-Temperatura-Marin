@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escala Marín (°Mn)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Escala Marín (°Mn)</h1>
+    <p>Una escala de temperatura local para Marín, Pontevedra</p>
+  </header>
+
+  <main>
+    <section id="introduccion">
+      <h2>Introducción</h2>
+      <p>
+        La Escala Marín es una propuesta innovadora diseñada para reflejar las condiciones climáticas específicas de Marín, Pontevedra. Basada en los registros históricos de temperaturas mínimas y máximas de la región, esta escala ofrece una herramienta localizada para la medición de la temperatura.
+      </p>
+    </section>
+
+    <section id="metodologia">
+      <h2>Metodología</h2>
+      <p>
+        La Escala Marín se basa en dos puntos de referencia clave:
+      </p>
+      <ul>
+        <li><strong>Mínima histórica</strong>: -2 °C (0 °Mn).</li>
+        <li><strong>Máxima histórica</strong>: 35 °C (100 °Mn).</li>
+      </ul>
+      <p>
+        La fórmula para convertir de Celsius a Marín es:
+      </p>
+      <pre>T<sub>Mn</sub> = (100 / 37) · (T<sub>C</sub> + 2)</pre>
+    </section>
+
+    <section id="conversor">
+      <h2>Conversor de Temperatura</h2>
+      <div class="conversor-container">
+        <label for="celsius">Temperatura en °C:</label>
+        <input type="number" id="celsius" placeholder="Ingresa °C">
+        <button onclick="convertir()">Convertir a °Mn</button>
+        <p id="resultado"></p>
+      </div>
+    </section>
+
+    <section id="tabla">
+      <h2>Tabla de Conversión</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Temperatura (°C)</th>
+            <th>Temperatura (°Mn)</th>
+            <th>Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>-2 °C</td>
+            <td>0 °Mn</td>
+            <td>Mínima histórica</td>
+          </tr>
+          <tr>
+            <td>0 °C</td>
+            <td>5.41 °Mn</td>
+            <td>Frío invernal</td>
+          </tr>
+          <tr>
+            <td>15 °C</td>
+            <td>45.95 °Mn</td>
+            <td>Templado</td>
+          </tr>
+          <tr>
+            <td>30 °C</td>
+            <td>86.49 °Mn</td>
+            <td>Calor veraniego</td>
+          </tr>
+          <tr>
+            <td>35 °C</td>
+            <td>100 °Mn</td>
+            <td>Máxima histórica</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2023 Escala Marín. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
